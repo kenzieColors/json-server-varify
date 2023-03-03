@@ -1,24 +1,9 @@
-# json-server-base
+<h1 align="center">Varify</h1>
 
-Esse é o repositório com a base de JSON-Server + JSON-Server-Auth já configurada, feita para ser usada no desenvolvimento das API's nos Projetos Front-end.
+<p align="center">Esse é o backend da aplicação <b>Varify</b>. O objetivo dessa aplicação é ser uma ferramenta que ajude o desenvolvedor na criação das variáveis globais de estilo no CSS.
+Esse repositório foi feito utilizando a base de JSON-Server + JSON-Server-Auth já configurada. (https://github.com/Kenzie-Academy-Brasil-Developers/json-server-base)
+</p>
 
-## Endpoints
+## **Endpoints**
 
-Assim como a documentação do JSON-Server-Auth traz (https://www.npmjs.com/package/json-server-auth), existem 3 endpoints que podem ser utilizados para cadastro e 2 endpoints que podem ser usados para login.
-
-### Cadastro
-
-POST /register <br/>
-POST /signup <br/>
-POST /users
-
-Qualquer um desses 3 endpoints irá cadastrar o usuário na lista de "Users", sendo que os campos obrigatórios são os de email e password.
-Você pode ficar a vontade para adicionar qualquer outra propriedade no corpo do cadastro dos usuários.
-
-
-### Login
-
-POST /login <br/>
-POST /signin
-
-Qualquer um desses 2 endpoints pode ser usado para realizar login com um dos usuários cadastrados na lista de "Users"
+A API tem um total de 5 endpoints, podendo registrar usuário, realizar login, buscar usuário, registrar as cores favoritas do usuário e buscar as cores favoritas do usuário
