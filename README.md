@@ -8,6 +8,8 @@
 
 A API tem um total de 4 endpoints, podendo registrar usuário, realizar login, registrar as cores favoritas do usuário e buscar as cores favoritas do usuário.
 
+A URL base da API é: https://json-server-varify.onrender.com/
+
 <h2 align ='center'> Criação de usuário </h2>
 
 `POST /register - FORMATO DA REQUISIÇÃO`
