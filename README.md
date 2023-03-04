@@ -118,5 +118,3 @@ Caso dê tudo certo, a resposta será assim:
   "id": 3
 }
 ```
-
-Feito por Vitor Hugo Mendes
