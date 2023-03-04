@@ -82,16 +82,12 @@ Exemplo de resposta com o id {1}:
 `GET /colors{1} - FORMATO DA RESPOSTA - STATUS 200`
 
 ```json
-[
-  [
-    {
-      "name": "azul",
-      "color": "#43231",
-      "userId": 1,
-      "id": 1
-    }
-  ]
-]
+{
+  "name": "azul",
+  "color": "#43231",
+  "userId": 1,
+  "id": 1
+}
 ```
 
 <h2 align = "center"> Registrar cores </h2>
