@@ -11,6 +11,18 @@
       "password": "$2a$10$MfqcNBJ16.NRnyS.lGen3uYdyw4fLs7pWOg.YW2IkXwkRV5JAKYM2",
       "nome": "vitor",
       "id": 2
+    },
+    {
+      "email": "teste2@mail.com",
+      "password": "$2a$10$u4/D8oMhf15RKO/BXI4RvuBb/CWsFYvGzTrucZKs.ROzRuPwhWnfC",
+      "nome": "vitor",
+      "id": 3
+    },
+    {
+      "email": "teste5@mail.com",
+      "password": "$2a$10$Yxybkai3xHWqagBqLQDk2OCz4/EFGug38TJ/dUejdSyyFmNvz1IXu",
+      "name": "vitor",
+      "id": 4
     }
   ],
   "colors": [
@@ -25,6 +37,12 @@
       "color": "#43321312",
       "userId": 2,
       "id": 2
+    },
+    {
+      "name": "vinho",
+      "color": "#431312",
+      "userId": 1,
+      "id": 3
     }
   ]
 }
