@@ -94,7 +94,7 @@ Exemplo de resposta com o id {2}:
 }
 ```
 
-<h2 align = "center"> Registrar cores </h2>
+<h2 align = "center"> Registrar favoritos </h2>
 
 O campo userId deve ser preenchido com o id do usuário logado
 
