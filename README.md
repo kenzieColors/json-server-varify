@@ -69,26 +69,28 @@ Rotas que necessitam de autorização deve ser informado no cabeçalho da requis
 
 > Authorization: Bearer {token}
 
-<h2 align = "center"> Cores favoritadas </h2>
+<h2 align = "center"> Favoritos </h2>
 
-Para buscar as cores favoritadas por aquele usuário em específico, use o ID dele na rota dessa forma:
+Para buscar as variáveis favoritadas por aquele usuário em específico, use o ID dele na rota dessa forma:
 
-`GET /colors{id}`
+`GET /favorites?userId={id}`
 
 ```
 Não é necessário um corpo da requisição.
 ```
 
-Exemplo de resposta com o id {1}:
+Exemplo de resposta com o id {2}:
 
-`GET /colors{1} - FORMATO DA RESPOSTA - STATUS 200`
+`GET /favorites?userId=2 - FORMATO DA RESPOSTA - STATUS 200`
 
 ```json
 {
-  "name": "azul",
-  "color": "#43231",
-  "userId": 1,
-  "id": 1
+  "userId": 2,
+  "colors": ["#BCECE0", "#36EEE0", "#F652A0", "#4C5270"],
+  "titles": [17, 12],
+  "texts": [10],
+  "radius": [2],
+  "id": 3
 }
 ```
 
@@ -96,25 +98,29 @@ Exemplo de resposta com o id {1}:
 
 O campo userId deve ser preenchido com o id do usuário logado
 
-`POST /colors - FORMATO DA REQUISIÇÃO`
+`POST /favorites - FORMATO DA REQUISIÇÃO`
 
 ```json
 {
-  "name": "red",
-  "color": "#431312",
-  "userId": 1
+  "userId": 2,
+  "colors": ["#050A30", "#000C66", "#0000FF", "#7EC8E3"],
+  "titles": [22, 18],
+  "texts": [16, 13, 10],
+  "radius": [5, 3]
 }
 ```
 
 Caso dê tudo certo, a resposta será assim:
 
-`POST /colors - FORMATO DA RESPOSTA - STATUS 201`
+`POST /favorites - FORMATO DA RESPOSTA - STATUS 201`
 
 ```json
 {
-  "name": "vinho",
-  "color": "#431312",
-  "userId": 1,
+  "userID": 2,
+  "colors": ["#050A30", "#000C66", "#0000FF", "#7EC8E3"],
+  "titles": [22, 18],
+  "texts": [16, 13, 10],
+  "radius": [5, 3],
   "id": 3
 }
 ```

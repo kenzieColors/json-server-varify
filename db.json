@@ -5,32 +5,39 @@
       "password": "$2a$10$YQiiz0ANVwIgpOjYXPxc0O9H2XeX3m8OoY1xk7OGgxTnOJnsZU7FO",
       "name": "Kenzinho",
       "id": 1
+    },
+    {
+      "email": "teste@mail.com",
+      "password": "$2a$10$FqDtJQ/AqP.ogBC/KwU80.qrvyebQNSNeh7NVgMTIUh60rnssn6xi",
+      "name": "vitor",
+      "id": 2
     }
   ],
   "favorites": [
     {
-      "userID": 1,
+      "userId": 1,
       "colors": ["#050A30", "#000C66", "#0000FF", "#7EC8E3"],
-
       "titles": [22, 18],
-
       "texts": [16, 13, 10],
-
       "radius": [5, 3],
-
       "id": 1
     },
     {
-      "userID": 1,
+      "userId": 1,
       "colors": ["#E8B4B8", "#EED6D3", "#A49393", "#67595E"],
-
       "titles": [20, 16],
-
       "texts": [18, 16, 12],
-
       "radius": [8, 5],
-
       "id": 2
+    },
+
+    {
+      "userId": 2,
+      "colors": ["#BCECE0", "#36EEE0", "#F652A0", "#4C5270"],
+      "titles": [17, 12],
+      "texts": [10],
+      "radius": [2],
+      "id": 3
     }
   ]
 }
