@@ -16,28 +16,50 @@
   "favorites": [
     {
       "userId": 1,
-      "colors": ["#050A30", "#000C66", "#0000FF", "#7EC8E3"],
-      "titles": [22, 18],
-      "texts": [16, 13, 10],
-      "radius": [5, 3],
+      "favorite": {
+        "colorPrimary": "#E8B4B8",
+        "colorSecondary": "#EED6D3",
+        "colorTertiary": "#A49393",
+        "titleSize1": 20,
+        "titleSize2": 16,
+        "textSize1": 18,
+        "textSize2": 14,
+        "textSize3": 12,
+        "radiusSize1": 5
+      },
       "id": 1
     },
     {
       "userId": 1,
-      "colors": ["#E8B4B8", "#EED6D3", "#A49393", "#67595E"],
-      "titles": [20, 16],
-      "texts": [18, 16, 12],
-      "radius": [8, 5],
+      "favorite": {
+        "colorPrimary": "#BCECE0",
+        "colorSecondary": "#36EEE0",
+        "colorTertiary": "#F652A0",
+        "titleSize1": 28,
+        "titleSize2": 15,
+        "textSize1": 18,
+        "textSize2": 14,
+        "radiusSize1": 3
+      },
       "id": 2
     },
-
     {
       "userId": 2,
-      "colors": ["#BCECE0", "#36EEE0", "#F652A0", "#4C5270"],
-      "titles": [17, 12],
-      "texts": [10],
-      "radius": [2],
-      "id": 3
+      "favorite": {
+        "colorPrimary": "#050A30",
+        "colorSecondary": "#000C66",
+        "colorTertiary": "#0000FF",
+        "titleSize1": 22,
+        "titleSize2": 18,
+        "titleSize3": 16,
+        "textSize1": 16,
+        "textSize2": 13,
+        "textSize3": 10,
+        "radiusSize1": 5,
+        "radiusSize2": 3,
+        "radiusSize3": 1
+      },
+      "id": 4
     }
   ]
 }

@@ -79,19 +79,42 @@ Para buscar as variáveis favoritadas por aquele usuário em específico, use o 
 Não é necessário um corpo da requisição.
 ```
 
-Exemplo de resposta com o id {2}:
+Exemplo de resposta com o id {1}:
 
-`GET /favorites?userId=2 - FORMATO DA RESPOSTA - STATUS 200`
+`GET /favorites?userId=1 - FORMATO DA RESPOSTA - STATUS 200`
 
 ```json
-{
-  "userId": 2,
-  "colors": ["#BCECE0", "#36EEE0", "#F652A0", "#4C5270"],
-  "titles": [17, 12],
-  "texts": [10],
-  "radius": [2],
-  "id": 3
-}
+[
+  {
+    "userId": 1,
+    "favorite": {
+      "colorPrimary": "#E8B4B8",
+      "colorSecondary": "#EED6D3",
+      "colorTertiary": "#A49393",
+      "titleSize1": 20,
+      "titleSize2": 16,
+      "textSize1": 18,
+      "textSize2": 14,
+      "textSize3": 12,
+      "radiusSize1": 5
+    },
+    "id": 1
+  },
+  {
+    "userId": 1,
+    "favorite": {
+      "colorPrimary": "#BCECE0",
+      "colorSecondary": "#36EEE0",
+      "colorTertiary": "#F652A0",
+      "titleSize1": 28,
+      "titleSize2": 15,
+      "textSize1": 18,
+      "textSize2": 14,
+      "radiusSize1": 3
+    },
+    "id": 2
+  }
+]
 ```
 
 <h2 align = "center"> Registrar favoritos </h2>
@@ -103,10 +126,20 @@ O campo userId deve ser preenchido com o id do usuário logado
 ```json
 {
   "userId": 2,
-  "colors": ["#050A30", "#000C66", "#0000FF", "#7EC8E3"],
-  "titles": [22, 18],
-  "texts": [16, 13, 10],
-  "radius": [5, 3]
+  "favorite": {
+    "colorPrimary": "#050A30",
+    "colorSecondary": "#000C66",
+    "colorTertiary": "#0000FF",
+    "titleSize1": 22,
+    "titleSize2": 18,
+    "titleSize3": 16,
+    "textSize1": 16,
+    "textSize2": 13,
+    "textSize3": 10,
+    "radiusSize1": 5,
+    "radiusSize2": 3,
+    "radiusSize3": 1
+  }
 }
 ```
 
@@ -116,11 +149,21 @@ Caso dê tudo certo, a resposta será assim:
 
 ```json
 {
-  "userID": 2,
-  "colors": ["#050A30", "#000C66", "#0000FF", "#7EC8E3"],
-  "titles": [22, 18],
-  "texts": [16, 13, 10],
-  "radius": [5, 3],
-  "id": 3
+  "userId": 2,
+  "favorite": {
+    "colorPrimary": "#050A30",
+    "colorSecondary": "#000C66",
+    "colorTertiary": "#0000FF",
+    "titleSize1": 22,
+    "titleSize2": 18,
+    "titleSize3": 16,
+    "textSize1": 16,
+    "textSize2": 13,
+    "textSize3": 10,
+    "radiusSize1": 5,
+    "radiusSize2": 3,
+    "radiusSize3": 1
+  },
+  "id": 4
 }
 ```
